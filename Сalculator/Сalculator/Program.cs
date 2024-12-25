@@ -8,11 +8,12 @@ namespace Сalculator
 
         static void Main(string[] args)
         {
-            
+
             Console.WriteLine("Введите математическое выражение:");
-            string input = Console.ReadLine(); 
+            string input = Console.ReadLine();
             var newObject = new Operations();
-            var result=newObject.ConvertToPRN(input);
+            var result = newObject.ConvertToPRN(input);
+            Console.WriteLine($"{result}");
         }
     }
 }
