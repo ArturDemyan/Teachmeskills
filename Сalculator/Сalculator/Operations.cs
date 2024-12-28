@@ -15,49 +15,6 @@ namespace Сalculator
 
         public Operations() { }
 
-        //public string ConvertToRPN(string input)
-        //{
-        //    List<string> tokens = new List<string>();
-        //    string noSpacesInput = input.Replace(" ", "");
-
-        //    foreach (var item in noSpacesInput) 
-        //    {
-        //        tokens.Add(item.ToString());
-        //    }
-
-
-        // for (int i = 0; i<tokens.Count; i++)
-        // {
-        //        if (tokens[i]=="*" || tokens[i]=="/")
-        //        {            
-        //           double left = double.Parse(tokens[i-1]);
-        //           double right = double.Parse(tokens[i+1]);
-        //           double result = tokens[i]=="*" ?  left * right: left / right;
-
-        //            tokens[i-1] = result.ToString();
-        //            tokens.RemoveAt(i);
-        //            tokens.RemoveAt(i);
-        //            --i;
-        //        }
-        // }
-        //    for(int i=0; i<tokens.Count; i++)
-        //    {
-        //        if (tokens[i]=="+" || tokens[i]=="-")
-        //        {
-        //            double left = double.Parse(tokens[i - 1]);
-        //            double right = double.Parse(tokens[i + 1]);
-        //            double result = tokens[i] =="+" ? left + right : left - right;
-        //            tokens[i - 1] = result.ToString();
-        //            tokens.RemoveAt(i);
-        //            tokens.RemoveAt(i);
-        //            --i;
-        //        }
-        //    }
-        //    double finalResult = double.Parse(tokens[0]);
-
-        //    return finalResult.ToString();
-        //}
-
         public double ConvertToPRN(string input)
         {
             List<string> output = new List<string>();
